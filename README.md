@@ -9,7 +9,7 @@ Windows Script to batch process the renaming and taging of mkv tracks.
 It has a few improvements such as:
 * Python so it could work on other os's with some small modifications
 * Error Checking for extra track instructions and default flagging
-* automates the removal of the `--output` and `()` lines
+* automates the removal of the `--output` and `()` lines by usiing part of my script [HERE](https://github.com/fearherbs1/options.json-arg-stripper)
 
 ### Dependencies
 - [MKVToolNix](https://www.fosshub.com/MKVToolNix.html)

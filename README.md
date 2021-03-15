@@ -32,3 +32,5 @@ It has a few improvements such as:
 
 If an error is detected by the script it will put that filename in a text file named FIXME.txt  
 This is mostly caused by unacounted for media tracks exixting in other files besided the first one, audio commentary files are a common example.  
+
+**This is not extensivly tested be sure to check your finished files reguardless!!**

@@ -11,6 +11,10 @@ It has a few improvements such as:
 * Error Checking for extra track instructions and default flagging
 * automates the removal of the `--output` and `()` lines
 
+### Dependencies
+- [MKVToolNix](https://www.fosshub.com/MKVToolNix.html)
+- [python3](https://www.python.org/downloads/)
+
 ### Useage:
 1. Download [MKVToolNix](https://mkvtoolnix.download/downloads.html)
 2. Open `mkvtoolnix-gui.exe`.
@@ -24,4 +28,7 @@ It has a few improvements such as:
 `mkv_tools_location = "'C:\\Program Files\\MKVToolNix\\mkvmerge.exe'"`
 
 8. Run `mkvtoolnix-batch-py.py` by running `python3 mkvtoolnix-batch-py.py` in a command prompt within your directory.
-9. Go grab yourself a cup of coffee and wait for the multiplexing process to complete. Processed MKV files will appear inside the `Mkv-Merge-Out` directory.
+9. Wait for the multiplexing process to complete. Processed MKV files will appear inside the `Mkv-Merge-Out` directory.
+
+If an error is detected by the script it will put that filename in a text file named FIXME.txt  
+This is mostly caused by unacounted for media tracks exixting in other files besided the first one, audio commentary files are a common example.  

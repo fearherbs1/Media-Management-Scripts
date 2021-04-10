@@ -15,7 +15,7 @@ It has a few improvements such as:
 - [MKVToolNix](https://www.fosshub.com/MKVToolNix.html)
 - [python3](https://www.python.org/downloads/)
 
-### Useage:
+### Usage:
 1. Download [MKVToolNix](https://mkvtoolnix.download/downloads.html)
 2. Open `mkvtoolnix-gui.exe`.
 3. Add any of the MKV files to be processed (drag-and-drop works just fine).
@@ -31,6 +31,19 @@ It has a few improvements such as:
 9. Wait for the multiplexing process to complete. Processed MKV files will appear inside the `Mkv-Merge-Out` directory.
 
 If an error is detected by the script it will put that filename in a text file named FIXME.txt  
-This is mostly caused by unacounted for media tracks exixting in other files besided the first one, audio commentary files are a common example.  
+This is mostly caused by unaccounted for media tracks existing in other files besides the first one, audio commentary files are a common example.  
 
-**This is not extensively tested be sure to check your finished files reguardless!!**
+**This is not extensively tested be sure to check your finished files regardless!!**
+
+## python/Filename-Replace-String-py
+A very simple script that removes a specific string from a filename for all files in a directory.
+This is useful if you only need to remove a part of a filename.
+
+### Dependencies
+- [python3](https://www.python.org/downloads/)
+
+### Usage:
+1. Download the script and place it in the same directory as the files you want to rename.
+2. Run the script with Python3 `python3 Filename-Replace-String-py.py`
+3. Enter the string you want to remove in the console
+4. profit

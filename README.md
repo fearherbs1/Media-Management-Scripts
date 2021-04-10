@@ -21,7 +21,7 @@ It has a few improvements such as:
 3. Add any of the MKV files to be processed (drag-and-drop works just fine).
 4. Perform your changes within the GUI (disable tracks, rename tracks, set default tracks, etc.).
 5. Go to `Menu Bar > Multiplexer > Create option file`, and save it as 'options.json' in the same directory where all MKV files to be processed are. You can then close the GUI.
-6. Download The script and place it where your media files and optioms.json is.
+6. Download The script and place it where your media files and options.json is.
 7. If your mkvmerge.exe is not in `C:\Program Files\MKVToolNix` Edit the script and replace the value of the variable `mkv_tools_location` with your path to `mkvmerge.exe`  
   
 **NOTE: Be sure to leave both sets of quotes and escape your backslashes!!** ex:  

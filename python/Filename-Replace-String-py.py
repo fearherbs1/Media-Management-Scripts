@@ -11,8 +11,8 @@ def process_files():
     # iterate through our files and rename them
     for count, filename in enumerate(os.listdir(current_dir)):
         if target_string in filename:
-            print(f"Processing {filename}")
             new_filename = filename.replace(target_string, "")
+            print(f"Processing {filename} ---> {new_filename}")
             os.rename(filename, new_filename)
     print("Done")
 

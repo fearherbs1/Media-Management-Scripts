@@ -53,12 +53,12 @@ This script helps you merge audio tracks or subtitle tracks into one mkv file.
 It can also append a language code and track description
 For example:
 
-`Attack on Titan S01E01 - To you in 200 years.mp4`  
+`Attack on Titan S01E01 - To you in 2000 years.mp4`  
 and  
-`Attack on Titan S01E01 - To you in 200 years.srt`  
+`Attack on Titan S01E01 - To you in 2000 years.srt`  
 
 will become:    
-`Attack on Titan S01E01 - To you in 200 years.mkv`  
+`Attack on Titan S01E01 - To you in 2000 years.mkv`  
 With both tracks included inside the mkv container.  
 
 ### Dependencies
@@ -68,7 +68,7 @@ With both tracks included inside the mkv container.
 ### Usage:
 1. Download the script and place it in the same directory as the audo or subtitle files.  
 2. **BE SURE** the files have the same name besides the extension ex:  
-`Attack on Titan S01E01 - To you in 200 years.mp4` and `Attack on Titan S01E01 - To you in 200 years.srt`
+`Attack on Titan S01E01 - To you in 2000 years.mp4` and `Attack on Titan S01E01 - To you in 2000 years.srt`
    
 3. Download [MKVToolNix](https://mkvtoolnix.download/downloads.html)
 4. If be sure it installs to: `C:\Program Files\MKVToolNix`

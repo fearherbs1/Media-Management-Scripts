@@ -2,6 +2,7 @@ import subprocess
 import shlex
 import re
 import os
+from os import path
 
 
 def check_for_options_file():
@@ -30,6 +31,12 @@ def mkv_merge_out():
     output_dir = "Mkv-Merge-Out"
     current_dir = os.getcwd()
     mkv_tools_location = "'C:\\Program Files\\MKVToolNix\\mkvmerge.exe'"
+	
+	# check and make sure mkv tools exits in the correct location
+    if path.exists(mkv_tools_location.replace("'", "")) is False:
+        print("No mkv tools found. check directory")
+        print(f"currently configured directory {mkv_tools_location} ")
+        exit()
 
     try:
         os.mkdir(output_dir)

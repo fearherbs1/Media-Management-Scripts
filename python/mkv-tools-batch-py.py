@@ -2,7 +2,6 @@ import subprocess
 import shlex
 import re
 import os
-from os import path
 
 
 def check_for_options_file():
@@ -32,12 +31,6 @@ def mkv_merge_out():
     current_dir = os.getcwd()
     mkv_tools_location = "'C:\\Program Files\\MKVToolNix\\mkvmerge.exe'"
 
-    # check and make sure mkv tools exits in the correct location
-    if path.exists(mkv_tools_location.replace("'", "")) is False:
-        print("No mkv tools found. check directory")
-        print(f"currently configured directory {mkv_tools_location} ")
-        exit()
-
     try:
         os.mkdir(output_dir)
         print(f"Output directory '{output_dir}' created.")
@@ -53,7 +46,7 @@ def mkv_merge_out():
 
             output = subprocess.run(shlex.split(mkv_tools_cmd), capture_output=True, text=True)
             output_str = str(output)
-            print(output_str)
+            # print(output_str)
             errors = ["was requested but not found in the file.",
                       "Another default track for audio tracks has already been set"]
 

@@ -49,7 +49,7 @@ def mkv_merge_out():
         if filename.endswith(".mkv"):
             print(f"Processing File {file}...")
 
-            mkv_tools_cmd = f"{mkv_tools_location} @options.json -o '{output_dir}/{file}' '{file}'"
+            mkv_tools_cmd = f"{mkv_tools_location} @options.json -o \"{output_dir}/{file}\" \"{file}\""
 
             output = subprocess.run(shlex.split(mkv_tools_cmd), capture_output=True, text=True)
             output_str = str(output)
